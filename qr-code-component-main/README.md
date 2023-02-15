@@ -21,8 +21,8 @@ Another easy challenge to warm myself back up. I had originally started this one
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/skurshner/fe-mentor/tree/main/qr-code-component-main)
+- Live Site URL: [Live](https://sk-fm-qr.netlify.app/)
 
 ### Built with
 
