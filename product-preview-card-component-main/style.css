@@ -44,8 +44,18 @@ body {
 
 .strikethrough {
   font-size: 13px;
-  text-decoration: line-through;
   margin: 0 0 0 20px;
+}
+
+.aria-invisible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .title {
@@ -118,14 +128,14 @@ button:hover {
   padding: 24px;
 }
 
+picture > img {
+  height: 100%;
+}
+
 .price-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-}
-
-.img-desktop {
-  display: none;
 }
 
 @media (min-width: 601px) {
@@ -154,20 +164,15 @@ button:hover {
     margin-bottom: 29px;
   }
 
+  picture {
+    width: 50%;
+  }
+
   .strikethrough {
     margin: 0 0 0 20px;
   }
 
   .price-wrapper {
     margin-bottom: 30px;
-  }
-
-  .img-desktop {
-    display: block;
-    width: 50%;
-  }
-
-  .img-mobile {
-    display: none;
   }
 }
