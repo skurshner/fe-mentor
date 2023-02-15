@@ -110,7 +110,7 @@ button:hover {
   background-color: var(--deep-aquamarine-hover);
 }
 
-button > svg {
+button > img {
   margin-right: 12px;
 }
 
