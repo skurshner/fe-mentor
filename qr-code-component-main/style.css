@@ -1,0 +1,58 @@
+/* colors */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --gray: hsl(219, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+/* typography */
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--dark-blue);
+  margin: 24px 0 16px 0;
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1875px;
+  color: var(--gray);
+  margin: 0 16px;
+}
+
+/* containers */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+  height: 100vh;
+}
+
+.card {
+  width: 320px;
+  background-color: var(--white);
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+  border-radius: 20px;
+  padding: 16px 16px 40px 16px;
+  margin-bottom: 16px;
+}
+
+/* image */
+
+.card > img {
+  border-radius: 10px;
+  vertical-align: bottom;
+}
