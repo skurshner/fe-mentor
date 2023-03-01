@@ -1,0 +1,118 @@
+/* Color Variables */
+:root {
+  --primary-orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(217, 12%, 63%);
+  --medium-gray: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/* Text Styles */
+h1 {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--light-gray);
+}
+
+body {
+  background-color: var(--very-dark-blue);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 30px;
+  padding: 24px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 327px;
+}
+
+.star-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  border-radius: 40px;
+  margin-bottom: 16px;
+}
+
+.rating-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+
+.rating {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  width: 42px;
+  height: 42px;
+  border-radius: 100px;
+  background-color: var(--dark-blue);
+  color: var(--medium-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  transition: 200ms;
+}
+
+.rating:hover {
+  background-color: var(--primary-orange);
+  color: var(--white);
+}
+
+button {
+  background-color: var(--primary-orange);
+  border-radius: 22.5px;
+  padding: 12px 0;
+  width: 100%;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-transform: uppercase;
+  border: none;
+  transition: 200ms;
+}
+
+button:hover {
+  background-color: var(--white);
+  color: var(--primary-orange);
+}
