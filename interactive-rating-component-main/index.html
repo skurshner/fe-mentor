@@ -28,7 +28,7 @@
         <div id="rating-state">
           <!-- Rating state start -->
           <div class="star-container">
-            <img src="/images/icon-star.svg" alt="">
+            <img src="/images/icon-star.svg" alt="" />
           </div>
           <h1>How did we do?</h1>
           <p>
@@ -36,11 +36,11 @@
             feedback is appreciated to help us improve our offering!
           </p>
           <div class="rating-wrapper">
-            <div class="rating">1</div>
-            <div class="rating">2</div>
-            <div class="rating">3</div>
-            <div class="rating">4</div>
-            <div class="rating">5</div>
+            <div id="1" class="rating">1</div>
+            <div id="2" class="rating">2</div>
+            <div id="3" class="rating">3</div>
+            <div id="4" class="rating">4</div>
+            <div id="5" class="rating">5</div>
           </div>
 
           <button>Submit</button>
@@ -48,19 +48,27 @@
           <!-- Rating state end -->
         </div>
         <div id="thank-you-state" class="hidden">
-          <!-- Thank you state start -->
-          
-          <p>
-            You selected
-            <!-- Add rating here -->
-            out of 5
-          </p>
-          <h1>Thank you!</h1>
-          <p>
-            We appreciate you taking the time to give a rating. If you ever need
-            more support, don’t hesitate to get in touch!
-          </body>
-          <!-- Thank you state end -->s
+          <div class="thank-you-container">
+            <!-- Thank you state start -->
+            <img
+              src="/images/illustration-thank-you.svg"
+              alt="illustration of a phone showing a receipt and credit card"
+              srcset=""
+            />
+            <div class="rating-selection-container">
+              <p class="orange center-aligned">
+                You selected <span id="rated"></span>
+                <!-- Add rating here -->
+                out of 5
+              </p>
+            </div>
+            <h1 class="center-aligned">Thank you!</h1>
+            <p class="center-aligned">
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+            <!-- Thank you state end -->
+          </div>
         </div>
       </div>
     </main>

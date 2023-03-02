@@ -41,6 +41,14 @@ main {
   display: none;
 }
 
+.orange {
+  color: var(--primary-orange);
+}
+
+.center-aligned {
+  text-align: center;
+}
+
 .card {
   background: radial-gradient(
     98.96% 98.96% at 50% 0%,
@@ -115,4 +123,22 @@ button {
 button:hover {
   background-color: var(--white);
   color: var(--primary-orange);
+}
+
+.thank-you-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 5px 0;
+}
+
+.rating-selection-container {
+  background-color: var(--dark-blue);
+  border-radius: 22.5px;
+  padding: 7px 12px 3px 12px;
+  margin: 24px 0;
+}
+
+img {
+  width: 144px;
 }
