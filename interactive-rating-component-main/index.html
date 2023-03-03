@@ -25,7 +25,7 @@
   <body>
     <main>
       <div class="card">
-        <div id="rating-state">
+        <div id="rating-state" class="">
           <!-- Rating state start -->
           <div class="star-container">
             <img src="/images/icon-star.svg" alt="" />
@@ -43,11 +43,14 @@
             <div id="5" class="rating">5</div>
           </div>
 
-          <button>Submit</button>
+          <button id="submit">Submit</button>
+          <div id="error-text" class="hidden error-text">
+            <p>Please Select a Rating</p>
+          </div>
 
           <!-- Rating state end -->
         </div>
-        <div id="thank-you-state" class="">
+        <div id="thank-you-state" class="hidden">
           <div class="thank-you-container">
             <!-- Thank you state start -->
             <img

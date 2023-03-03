@@ -26,6 +26,8 @@ p {
   color: var(--light-gray);
 }
 
+/* Page Styles */
+
 body {
   background-color: var(--very-dark-blue);
 }
@@ -36,6 +38,8 @@ main {
   align-items: center;
   min-height: 100vh;
 }
+
+/* Utility Classes */
 
 .hidden {
   display: none;
@@ -48,6 +52,8 @@ main {
 .center-aligned {
   text-align: center;
 }
+
+/* Page Elements */
 
 .card {
   background: radial-gradient(
@@ -73,6 +79,10 @@ main {
   margin-bottom: 16px;
 }
 
+.star-container > img {
+  width: 13px;
+}
+
 .rating-wrapper {
   display: flex;
   width: 100%;
@@ -89,7 +99,7 @@ main {
   letter-spacing: 0.2px;
   width: 42px;
   height: 42px;
-  border-radius: 100px;
+  border-radius: 22px;
   background-color: var(--dark-blue);
   color: var(--medium-gray);
   display: flex;
@@ -102,17 +112,18 @@ main {
 .rating:hover {
   background-color: var(--primary-orange);
   color: var(--white);
+  cursor: pointer;
 }
 
 button {
   background-color: var(--primary-orange);
   border-radius: 22.5px;
-  padding: 12px 0;
+  padding: 15px 0;
   width: 100%;
   font-family: 'Overpass', sans-serif;
   font-weight: 700;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 15px;
   letter-spacing: 2px;
   color: var(--white);
   text-transform: uppercase;
@@ -123,6 +134,11 @@ button {
 button:hover {
   background-color: var(--white);
   color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.error-text {
+  padding: 8px;
 }
 
 .thank-you-container {
@@ -139,6 +155,69 @@ button:hover {
   margin: 24px 0;
 }
 
+.active {
+  background-color: var(--medium-gray);
+  color: var(--white);
+}
+
 img {
   width: 144px;
+}
+
+@media screen and (min-width: 450px) {
+  /* Text Styles */
+  h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .card {
+    padding: 32px 40px 32px 32px;
+    max-width: 412px;
+  }
+
+  .star-container {
+    width: 48px;
+    height: 48px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+  }
+
+  .star-container > img {
+    width: 16px;
+  }
+
+  .rating-wrapper {
+    margin: 24px 0 32px 0;
+  }
+
+  .rating {
+    width: 51px;
+    height: 51px;
+    border-radius: 26px;
+  }
+
+  button {
+    padding: 15px 0;
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .thank-you-container {
+    padding: 10px 0 14px 0;
+  }
+
+  .rating-selection-container {
+    margin: 32px 0;
+  }
+
+  img {
+    width: 162px;
+  }
 }
